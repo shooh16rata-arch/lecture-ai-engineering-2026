@@ -20,7 +20,7 @@ from app import tools
 # サーバーの名前と説明。クライアントに表示される（設定ファイル側のキー "glossary" とは別物）
 server = MCPServer(
     "aie2026-glossary",
-    instructions="AIE2026（AIエンジニアリング実践講座）の用語集と各回の要点を提供する。",
+    instructions="AIE2026（AIエンジニアリング実践講座）の用語集と各回の要点を提供する。,URL を渡されたら fetch で内容を読む。" 
 )
 
 # 第3回と同じ関数を、そのまま MCP のツールとして公開する。docstring と型ヒントが説明文になる
